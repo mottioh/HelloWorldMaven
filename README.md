@@ -32,6 +32,8 @@ Took the Maven home path, ill used it when i configured Maven on Jenkins
 
 Manage Jenkins-> Global tools configuration-> Maven Installation
 
+https://github.com/mottioh/HelloWorldMaven/blob/master/Maven_Config.JPG
+
 Created new Maven project
 
 Task requests:
@@ -71,6 +73,8 @@ deleted the Deploy section from the code as requested :
     }
 }
 
-Clean workspace after successfull run With Clean Workspace plugin       
-as shawn in https://github.com/mottioh/HelloWorldMaven/blob/master/Clear_workspace.JPG                     
+Clean workspace after successfull run With Clean Workspace plugin   
+
+as shawn in https://github.com/mottioh/HelloWorldMaven/blob/master/Clear_workspace.JPG    
+
 and in the mail reply that I have sent
