@@ -25,7 +25,10 @@ Install Clean Workspace Plugin
 Created new Maven project
 
 Task requests:
-Check out from fork: 	Declarative automatically performs a checkout of source code on the agent, we  use it in the JenkinsfileUnix file - the source of it:
+Check out from fork: 
+
+Declarative automatically performs a checkout of source code on the agent, we  use it in the JenkinsfileUnix file - the source of it:
+
 https://www.jenkins.io/blog/2017/02/07/declarative-maven-project/
 
 deleted the Deploy section from the code as requested :
@@ -35,6 +38,7 @@ deleted the Deploy section from the code as requested :
                         sh "mvn deploy"
                         
  the JenkinsfileUnix file coded is as in the fork:
+ 
  pipeline {
     agent any
     stages {
@@ -57,3 +61,5 @@ deleted the Deploy section from the code as requested :
 }
 
 Clean workspace after successfull run With Clean Workspace plugin       
+as shawn in https://github.com/mottioh/HelloWorldMaven/blob/master/Clear_workspace.JPG                     
+and in the mail reply that I have sent
