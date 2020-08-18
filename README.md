@@ -22,15 +22,19 @@ sudo apt install maven
 
 checked that Maven is working with mvn -ver
 
+Took the Maven home path, ill used it when i configured Maven on Jenkins 
+
 Install git Plugin
 
 Install Maven Plugin
 
 Install Clean Workspace Plugin
 
-Took the Maven home path, ill used it when i configured Maven on Jenkins 
+Configure Maven in Jenkins settings:
 
 Manage Jenkins-> Global tools configuration-> Maven Installation
+
+Entered the MAVEN_HOME parameter
 
 https://github.com/mottioh/HelloWorldMaven/blob/master/Maven_Config.JPG
 
