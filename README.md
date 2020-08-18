@@ -32,12 +32,13 @@ Declarative automatically performs a checkout of source code on the agent, we  u
 https://www.jenkins.io/blog/2017/02/07/declarative-maven-project/
 
 deleted the Deploy section from the code as requested :
+
         stage('Deploy') {
             steps {
                withMaven(maven : 'apache-maven-3.3.3'){
                         sh "mvn deploy"
                         
- the JenkinsfileUnix file coded is as in the fork:
+ the JenkinsfileUnix code is now : 
  
  pipeline {
     agent any
