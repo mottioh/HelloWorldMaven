@@ -10,17 +10,27 @@ sudo yum install docker-ce docker-ce-cli containerd.io
 
 Pulled Jenkins Container -docker pull jenkins/jenkins
 
+Forked the requsted repo to my container as described here:
+
+https://docs.github.com/en/github/getting-started-with-github/fork-a-repo
+
 Installed Maven within the container -  sudo docker exec -u root -t -i [container-id]  bash
 
 sudo apt update
 
 sudo apt install maven
 
+checked that Maven is working with mvn -ver
+
 Install git Plugin
 
 Install Maven Plugin
 
 Install Clean Workspace Plugin
+
+Took the Maven home path, ill used it when i configured Maven on Jenkins 
+
+Manage Jenkins-> Global tools configuration-> Maven Installation
 
 Created new Maven project
 
