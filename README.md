@@ -1,9 +1,11 @@
-# HelloWorldMaven
 Installed Centos Machine on VirualBox
+
 Installed Docker - $ sudo yum install -y yum-utils
+
 $ sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
+    
 sudo yum install docker-ce docker-ce-cli containerd.io
 Pulled Jenkins Container -docker pull jenkins/jenkins
 Installed Maven within the container -  sudo docker exec -u root -t -i [container-id]  bash
