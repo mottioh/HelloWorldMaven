@@ -1,0 +1,66 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/bakery
+using credential 1c4223a2-6d29-4930-baa4-2f9aac39837e
+Fetching changes from the remote Git repository
+Checking out Revision 7fac7b379cfdedde322ca836baaee137dff407d4 (refs/remotes/origin/master)
+Commit message: "Update JenkinsfileUnix"
+Parsing POMs
+Established TCP socket on 36877
+[bakery] $ java -cp /var/jenkins_home/plugins/maven-plugin/WEB-INF/lib/maven33-agent-1.13.jar:/usr/share/maven/boot/plexus-classworlds-2.x.jar:/usr/share/maven/conf/logging jenkins.maven3.agent.Maven33Main /usr/share/maven /var/jenkins_home/war/WEB-INF/lib/remoting-4.5.jar /var/jenkins_home/plugins/maven-plugin/WEB-INF/lib/maven33-interceptor-1.13.jar /var/jenkins_home/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar 36877
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f /var/jenkins_home/workspace/bakery/pom.xml install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HelloWorldMaven 1.0.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ HelloWorldMaven ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/bakery/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ HelloWorldMaven ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ HelloWorldMaven ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/bakery/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ HelloWorldMaven ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ HelloWorldMaven ---
+[INFO] Surefire report directory: /var/jenkins_home/workspace/bakery/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.test.HelloWorldMaven.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in com.test.HelloWorldMaven.AppTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ HelloWorldMaven ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ HelloWorldMaven ---
+[INFO] Installing /var/jenkins_home/workspace/bakery/target/HelloWorldMaven-1.0.4-SNAPSHOT.jar to /var/jenkins_home/.m2/repository/com/test/HelloWorldMaven/1.0.4-SNAPSHOT/HelloWorldMaven-1.0.4-SNAPSHOT.jar
+[INFO] Installing /var/jenkins_home/workspace/bakery/pom.xml to /var/jenkins_home/.m2/repository/com/test/HelloWorldMaven/1.0.4-SNAPSHOT/HelloWorldMaven-1.0.4-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.927 s
+[INFO] Finished at: 2020-08-18T19:07:24+00:00
+[INFO] Final Memory: 14M/34M
+[INFO] ------------------------------------------------------------------------
+[JENKINS] Archiving /var/jenkins_home/workspace/bakery/pom.xml to com.test/HelloWorldMaven/1.0.4-SNAPSHOT/HelloWorldMaven-1.0.4-SNAPSHOT.pom
+[JENKINS] Archiving /var/jenkins_home/workspace/bakery/target/HelloWorldMaven-1.0.4-SNAPSHOT.jar to com.test/HelloWorldMaven/1.0.4-SNAPSHOT/HelloWorldMaven-1.0.4-SNAPSHOT.jar
+channel stopped
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+Finished: SUCCESS
